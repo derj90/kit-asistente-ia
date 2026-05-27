@@ -1,6 +1,6 @@
 # Ejemplo — Orientador para estudiantes ingresantes UMCE
 
-> Bot tipo **Módulo A** (system prompt en un Gem, en gemini.google.com). Adaptable a cualquier rol que oriente a estudiantes en procesos académicos.
+> Bot tipo **Nivel 1** (system prompt en un Gem, en gemini.google.com). Adaptable a cualquier rol que oriente a estudiantes en procesos académicos.
 
 ## Caso de uso
 

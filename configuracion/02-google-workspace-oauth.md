@@ -2,7 +2,7 @@
 
 > **OAuth** es el sistema mediante el cual le das permiso a una aplicación (tu bot) para que acceda a algunos de tus servicios Google (Calendar, Drive, Gmail, Docs, Sheets) en tu nombre, **sin entregarle tu contraseña**. Es como una credencial de visita: la aplicación entra, hace lo que le autorizaste, y nada más.
 
-> **Solo necesitas hacer esto si vas por Módulo B (Bot orquestador con Workspace).** Si vas por Módulo A o C, salta este archivo.
+> **Solo necesitas hacer esto si vas por Nivel 2 (Bot orquestador con Workspace).** Si vas por Nivel 1 o 3-4, salta este archivo.
 
 ---
 
@@ -12,10 +12,10 @@ Tienes que decidir con qué cuenta Google vas a configurar OAuth:
 
 | Opción | Cuándo te conviene |
 |---|---|
-| **Cuenta UMCE `@umce.cl`** | Si tu bot va a tocar Drive/Calendar/Gmail **institucionales** (ej. agendar reuniones de tu equipo, leer correos UMCE). |
+| **Cuenta institucional** (ej. `@umce.cl`) | Si tu bot va a tocar Drive/Calendar/Gmail **institucionales** (ej. agendar reuniones de tu equipo, leer correos institucionales). |
 | **Cuenta personal `@gmail.com`** | Si quieres practicar sin riesgo de tocar datos institucionales, o si tu cuenta institucional tiene restricciones por política del administrador. |
 
-**Recomendación UDFV**: para este curso, **usa tu cuenta personal**. Una vez que el bot esté funcionando y comprobado, puedes migrarlo a `@umce.cl`. Así evitas tocar datos institucionales mientras aprendes.
+**Recomendación UDFV**: para empezar, **usa tu cuenta personal**. Una vez que el bot esté funcionando y comprobado, puedes migrarlo a la cuenta institucional. Así evitas tocar datos institucionales mientras aprendes.
 
 ---
 
@@ -43,7 +43,7 @@ Inicia sesión con la cuenta que elegiste.
 
 Arriba a la izquierda, junto al logo de Google Cloud, verás un selector de proyecto. Haz clic.
 
-- Si no tienes ningún proyecto, te ofrecerá crear uno: dale un nombre simple como `curso-2-4-bot`.
+- Si no tienes ningún proyecto, te ofrecerá crear uno: dale un nombre simple como `mi-asistente-ia`.
 - Si ya tienes proyectos (porque generaste API key Gemini antes), puedes reutilizar el mismo proyecto.
 
 Espera unos segundos a que se cree.
@@ -70,12 +70,12 @@ En el menú izquierdo: **"APIs y servicios" → "Pantalla de consentimiento de O
 
 La primera vez te pedirá elegir tipo de usuario:
 
-- **Interno**: solo si tu cuenta es Google Workspace de una organización. Si usas `@umce.cl` y la UMCE lo permite, esta es la opción más simple.
-- **Externo**: para cuentas `@gmail.com` o si la opción interna no aparece. Tu app queda en "modo prueba" hasta que la publiques. Está bien, no necesitas publicarla para el curso.
+- **Interno**: solo si tu cuenta es Google Workspace de una organización (institucional) y la organización lo permite, esta es la opción más simple.
+- **Externo**: para cuentas `@gmail.com` o si la opción interna no aparece. Tu app queda en "modo prueba" hasta que la publiques. Está bien, no necesitas publicarla para uso personal.
 
 Después te pide rellenar:
 
-- **Nombre de la app**: pon algo descriptivo, ej. "Mi Asistente Curso 2.4".
+- **Nombre de la app**: pon algo descriptivo, ej. "Mi Asistente IA".
 - **Correo de soporte de usuario**: tu propio correo.
 - **Dominios autorizados**: déjalo vacío para uso personal.
 - **Información de contacto del desarrollador**: tu correo.
@@ -110,7 +110,7 @@ Te pide tipo de aplicación. Elige según tu herramienta:
 - **Aplicación de escritorio** → si vas a usar Codex, Antigravity o Claude Code en tu computador.
 - **Aplicación web** → si configurarás algo que corre en un servidor.
 
-Para el Curso 2.4 lo normal es **Aplicación de escritorio**. Dale un nombre descriptivo (ej. "Cliente Curso 2.4 Bot") y crea.
+Para este kit lo normal es **Aplicación de escritorio**. Dale un nombre descriptivo (ej. "Cliente Mi Asistente IA") y crea.
 
 Te muestra:
 - **Client ID** (cadena que termina en `.apps.googleusercontent.com`).
@@ -176,16 +176,16 @@ Una vez configurado OAuth, tu bot técnicamente puede:
 2. **Nunca configurar el bot para enviar correos automáticamente**. Que siempre **redacte como borrador** y te avise: "El borrador está listo en tu bandeja de borradores; revísalo y envíalo manualmente."
 3. **Nunca pongas el bot a procesar correos masivamente sin revisión humana**. Funciona muy bien clasificando; pero las respuestas siempre las revisas tú.
 4. **Si vas a leer correos**, prefiere el scope `gmail.readonly` antes que cualquier scope que también permita escribir.
-5. **Si terminó el curso y ya no usas el bot**, vuelve a Google Cloud Console y borra el Client ID. Las credenciales que no se usan son riesgo gratis.
+5. **Si dejas de usar el bot**, vuelve a Google Cloud Console y borra el Client ID. Las credenciales que no se usan son riesgo gratis.
 
 ---
 
-## Revocar acceso después del curso
+## Revocar acceso cuando dejes de usar el bot
 
 Si quieres quitar todos los permisos que diste:
 
 1. Ve a https://myaccount.google.com/permissions
-2. Busca "Mi Asistente Curso 2.4" (o como hayas llamado a tu app).
+2. Busca "Mi Asistente IA" (o como hayas llamado a tu app).
 3. Haz clic → **"Quitar acceso"**.
 
 Esto invalida todos los tokens de tu bot sin que tengas que borrar el Client ID en Cloud Console.

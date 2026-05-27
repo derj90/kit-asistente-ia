@@ -1,6 +1,6 @@
-# Glosario — Los 9 ladrillos del Curso 2.4
+# Glosario — Los 9 ladrillos de un asistente con IA
 
-> Los nueve conceptos básicos que estructuran todo el curso. Cada uno con su definición, su analogía y un ejemplo concreto para tu rol UMCE. Léelos una vez y vuelve cuando necesites.
+> Los nueve conceptos básicos que estructuran cualquier asistente con IA construido con este kit. Cada uno con su definición, su analogía y un ejemplo concreto. Léelos una vez y vuelve cuando necesites.
 
 ---
 

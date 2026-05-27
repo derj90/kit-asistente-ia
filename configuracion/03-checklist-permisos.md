@@ -1,10 +1,10 @@
-# Checklist de permisos — Qué necesitas según tu módulo
+# Checklist de permisos — Qué necesitas según tu nivel
 
 > Esta matriz te dice exactamente qué credenciales y permisos preparar antes de empezar a construir tu bot, según el camino que elegiste en `mi-perfil.md`.
 
 ---
 
-## Módulo A — Bot con personalidad (Gem en gemini.google.com)
+## Nivel 1 — Bot con personalidad (Gem en gemini.google.com)
 
 **Mínimo viable (recomendado para empezar)**:
 
@@ -22,11 +22,11 @@
 
 ---
 
-## Módulo B — Bot orquestador con Google Workspace
+## Nivel 2 — Bot orquestador con Google Workspace
 
 **Obligatorio**:
 
-- [ ] Cuenta Google activa (decidida: personal o `@umce.cl`)
+- [ ] Cuenta Google activa (decidida: personal o institucional)
 - [ ] API key de Gemini (ver `01-gemini-api-key.md`)
 - [ ] OAuth Client ID + Secret en Google Cloud Console (ver `02-google-workspace-oauth.md`)
 - [ ] APIs habilitadas según tus servicios (al menos una de: Calendar, Drive, Gmail, Docs, Sheets)
@@ -53,7 +53,7 @@
 
 ---
 
-## Módulo C.1 — Bot con skill propia
+## Nivel 3 — Bot con skill propia
 
 **Mínimo viable**:
 
@@ -64,12 +64,12 @@
 
 **Si tu skill necesita conectarse a servicios externos**:
 
-- [ ] OAuth Google Cloud Console (igual que Módulo B, según servicios)
+- [ ] OAuth Google Cloud Console (igual que Nivel 2, según servicios)
 - [ ] APIs habilitadas según los servicios que tu skill usa
 
 ---
 
-## Módulo C.2 — Bot con conocimiento documental (RAG)
+## Nivel 4 — Bot con conocimiento documental (RAG)
 
 **Si lo haces en gemini.google.com como Gem**:
 
@@ -94,12 +94,12 @@
 
 ## Lista negra — Nunca jamás
 
-Sin importar el módulo, estas cosas son línea roja:
+Sin importar el nivel, estas cosas son línea roja:
 
 - [ ] **NO** subas tu archivo `credenciales.env` a GitHub ni a ningún repo público.
 - [ ] **NO** publiques capturas de pantalla que muestren tu API key o Client Secret.
 - [ ] **NO** compartas tu API key por correo, WhatsApp ni Slack.
-- [ ] **NO** uses datos personales sensibles de estudiantes (RUTs, notas, situaciones específicas) en ejemplos ni en `memoria/`.
+- [ ] **NO** uses datos personales sensibles de personas reales (RUTs, notas, situaciones específicas) en ejemplos ni en `memoria/`.
 - [ ] **NO** configures el bot para enviar correos automáticamente sin confirmación humana.
 - [ ] **NO** le des al bot scopes que no necesita ("por si acaso"). Cada scope adicional es riesgo gratis.
 
@@ -109,7 +109,7 @@ Sin importar el módulo, estas cosas son línea roja:
 
 Es normal. Toma esto como guía de referencia, no como tarea. Tu asistente IA va a:
 
-1. Leer `mi-perfil.md` para saber qué módulo elegiste.
+1. Leer `mi-perfil.md` para saber qué nivel elegiste.
 2. Decirte exactamente qué necesitas configurar **para tu caso**, sin pedirte cosas innecesarias.
 3. Acompañarte paso a paso por cada configuración cuando llegue el momento.
 

@@ -9,7 +9,7 @@
 ## Antes de empezar
 
 **Necesitas**:
-- Una cuenta Google activa (puede ser `@umce.cl` o personal).
+- Una cuenta Google activa (institucional o personal).
 - Tu navegador habitual con sesión iniciada en esa cuenta.
 - 5 minutos.
 
@@ -41,7 +41,7 @@ Verás un botón azul que dice **"Create API key"** (o "Crear clave de API" si t
 
 Haz clic en ese botón.
 
-Te va a preguntar en qué proyecto crear la key. Si nunca has usado Google Cloud, te ofrecerá crear un proyecto nuevo automáticamente: acepta. Si ya tienes proyectos, elige uno o crea uno nuevo con un nombre simple (ej. "mi-curso-2.4").
+Te va a preguntar en qué proyecto crear la key. Si nunca has usado Google Cloud, te ofrecerá crear un proyecto nuevo automáticamente: acepta. Si ya tienes proyectos, elige uno o crea uno nuevo con un nombre simple (ej. "mi-asistente-ia").
 
 ### 4. Copia la API key INMEDIATAMENTE
 
@@ -49,7 +49,7 @@ Después de unos segundos, te muestra la API key. Es una cadena larga que empiez
 
 **Cópiala completa al portapapeles** y pégala en algún lugar seguro de inmediato. Google solo te la muestra una vez; si cierras la ventana sin copiarla, vas a tener que generar una nueva.
 
-> Lugar seguro: NO un correo, NO un chat, NO un documento que vayas a compartir. Idealmente, un gestor de contraseñas (Bitwarden, 1Password) o un archivo local cifrado. Para este curso, lo más simple: pégala en el archivo `credenciales.env` que vas a configurar en el siguiente paso.
+> Lugar seguro: NO un correo, NO un chat, NO un documento que vayas a compartir. Idealmente, un gestor de contraseñas (Bitwarden, 1Password) o un archivo local cifrado. Lo más simple para este kit: pégala en el archivo `credenciales.env` que vas a configurar en el siguiente paso.
 
 ### 5. Pégala en tu archivo `credenciales.env`
 
@@ -90,7 +90,7 @@ El plan gratuito de Gemini tiene cuotas generosas para uso personal:
 - **Gemini 2.5 Flash**: hasta ~15 peticiones por minuto, varios millones de tokens al mes.
 - **Gemini 2.5 Pro**: cuotas más restringidas, pero suficientes para experimentar.
 
-Para los fines del Curso 2.4, **no vas a llegar al límite**. Si trabajas con tu bot construyéndolo y probándolo varias veces al día, sigues estando muy lejos de la cuota gratuita.
+Para construir tu primer bot con el kit, **no vas a llegar al límite**. Si trabajas con tu bot construyéndolo y probándolo varias veces al día, sigues estando muy lejos de la cuota gratuita.
 
 > Si en algún momento te aparece un mensaje "quota exceeded", espera unos minutos. Casi siempre es el límite por minuto, no el mensual.
 
@@ -99,10 +99,10 @@ Para los fines del Curso 2.4, **no vas a llegar al límite**. Si trabajas con tu
 ## Si algo sale mal
 
 ### "No me deja crear la key porque no tengo facturación"
-Algunas cuentas Google Workspace institucionales tienen restringido Google AI Studio por política del administrador. Si tu `@umce.cl` no funciona:
+Algunas cuentas Google Workspace institucionales tienen restringido Google AI Studio por política del administrador. Si tu cuenta institucional no funciona:
 
 1. Prueba con tu cuenta Google personal (`@gmail.com`).
-2. Si tampoco funciona, escríbele al equipo UDFV (`udfv@umce.cl`).
+2. Si tampoco funciona, consulta con quien administre tu cuenta o pide soporte en el espacio formativo correspondiente.
 
 ### "Me pide tarjeta de crédito"
 Eso significa que estás en una pantalla equivocada (probablemente Google Cloud Console, no AI Studio). **Cierra**. Vuelve a `https://aistudio.google.com/apikey`. El plan gratuito **no requiere tarjeta**.
@@ -119,8 +119,8 @@ Verifica que no la hayas pegado mal (sin espacios, sin saltos de línea, complet
 
 - Nunca compartas tu API key en correos, chats, capturas, ni código público.
 - Si por accidente la publicaste, ve a https://aistudio.google.com/apikey y **revócala** de inmediato.
-- Si terminas el curso y ya no la vas a usar, revócala igual. Es una buena higiene digital.
+- Si dejas de usarla, revócala igual. Es una buena higiene digital.
 
 ---
 
-¿Listo? Ahora puedes seguir con `02-google-workspace-oauth.md` (si vas por Módulo B) o ir directo a trabajar tu agente.
+¿Listo? Ahora puedes seguir con `02-google-workspace-oauth.md` (si vas por Nivel 2) o ir directo a trabajar tu agente.

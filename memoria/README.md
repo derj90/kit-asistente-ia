@@ -15,19 +15,19 @@ Aquí pones los **documentos que tu bot debe conocer**: PDFs, oficios, syllabus,
 - Archivos cuya circulación esté restringida por normativa institucional.
 - Material que no tengas autorización para procesar con IA.
 
-> Si dudas si puedes usar un documento, no lo subas y consulta con tu jefatura de unidad o con UDFV (`udfv@umce.cl`).
+> Si dudas si puedes usar un documento, no lo subas y consulta a quien corresponda en tu unidad o institución.
 
 ## Cómo se usan estos documentos
 
-Tu asistente IA puede usarlos de tres maneras según el módulo:
+Tu asistente IA puede usarlos de tres maneras según el nivel que estés trabajando:
 
-### Módulo A con Gem
+### Nivel 1 con Gem
 Subes 2-3 PDFs pequeños al campo "Knowledge" del Gem en gemini.google.com. El Gem los usará al responder. Funciona bien con pocos documentos estables (calendario académico, reglamento de pregrado, etc.).
 
-### Módulo C.2 con Antigravity / Codex
+### Nivel 4 con Antigravity / Codex
 Pones los archivos en esta carpeta `memoria/`. El asistente IA los lee al inicio de la conversación y los usa al responder. Funciona bien con cualquier cantidad y se actualiza cada vez que ejecutas.
 
-### Módulo C.2 con NotebookLM
+### Nivel 4 con NotebookLM
 Subes los archivos a un cuaderno de NotebookLM (https://notebooklm.google.com). El bot vive ahí y responde citando las fuentes con números. Funciona muy bien para muchos documentos (hasta cientos de páginas).
 
 > Decisión rápida: pocos docs estables → Gem. Volumen alto y necesidad de citas → NotebookLM. Quieres el bot en tu propio entorno → Antigravity / Codex con esta carpeta. Detalle en `docs/cuando-usar-que.md`.

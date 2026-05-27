@@ -1,6 +1,6 @@
 # Empecemos — Léeme primero
 
-Hola. Si estás leyendo esto, es porque ya descargaste el kit del Curso 2.4. Buena partida.
+Hola. Si estás leyendo esto, es porque ya descargaste el kit. Buena partida.
 
 Antes de cualquier cosa: **respira**. No tienes que entender todo de inmediato. Este kit está armado para que la IA que abres en tu computador te lleve de la mano. Tu pega es decidir **qué** quieres automatizar; la pega técnica la hace ella.
 
@@ -20,44 +20,42 @@ Las tres sirven. Si no tienes preferencia:
 - **Antigravity** — Similar a Codex, también amigable. Buena opción.
 - **Claude Code** — Más austera (corre en terminal), pero muy potente. Ideal si te sientes cómoda con la línea de comandos.
 
-Si tu colega del curso te recomendó alguna, ve por esa. Si no, **parte con Codex**.
+Si alguien te recomendó alguna en particular, ve por esa. Si no, **parte con Codex**.
 
-## El flujo completo del curso
+## El flujo completo
 
 ```
 1. Completas mi-perfil.md
    ↓
-2. La IA te ayuda a elegir Módulo A, B o C
+2. La IA te ayuda a elegir Nivel 1, 2 o 3-4
    ↓
 3. Construyes tu bot iterando con la IA
    ↓
 4. Pruebas tu bot con casos reales
    ↓
-5. Llenas la carpeta entregable/ (system prompt + reflexión + capturas)
-   ↓
-6. Subes el entregable al aula virtual del Curso 2.4 antes del plazo
+5. Llenas la carpeta mi-resultado/ (system prompt + reflexión + capturas)
 ```
 
-## Los 3 módulos en una línea cada uno
+## Los 3 niveles en una línea cada uno
 
-- **Módulo A** — "Quiero un asistente conversacional con buena personalidad para mi tarea X." → Construyes un **Gem** en gemini.google.com (más simple, sin OAuth).
-- **Módulo B** — "Quiero que mi asistente actúe sobre Google Workspace por mí (Calendar, Drive, Gmail, Docs, Sheets)." → Necesitas configurar OAuth (te guiamos en `configuracion/02-google-workspace-oauth.md`).
-- **Módulo C** — "Quiero encapsular una rutina compleja en una skill reusable, O quiero un asistente que responda usando mis propios PDFs/documentos." → Skills o RAG.
+- **Nivel 1 — Bot con personalidad** — "Quiero un asistente conversacional con buena personalidad para mi tarea X." → Construyes un **Gem** en gemini.google.com (más simple, sin OAuth).
+- **Nivel 2 — Bot orquestador** — "Quiero que mi asistente actúe sobre Google Workspace por mí (Calendar, Drive, Gmail, Docs, Sheets)." → Necesitas configurar OAuth (te guiamos en `configuracion/02-google-workspace-oauth.md`).
+- **Nivel 3-4 — Skill propia o conocimiento documental (RAG)** — "Quiero encapsular una rutina compleja en una skill reusable, O quiero un asistente que responda usando mis propios PDFs/documentos." → Skills o RAG.
 
 Si dudas cuál te conviene, en `docs/cuando-usar-que.md` está la regla de oro. Y de todas formas tu asistente IA te ayudará a elegir cuando completes el perfil.
 
 ## Lo que NO necesitas
 
 - **NO necesitas saber programar.** Si la IA te pide hacer algo técnico, ella misma te dice paso a paso qué tocar y dónde. Si te confundes, le dices "no entiendo" y baja el nivel.
-- **NO necesitas pagar nada.** La API de Gemini tiene un plan gratuito que te alcanza de sobra. Codex y Antigravity tienen plan gratuito. Si te piden tarjeta de crédito en algún momento → **detente** y avísale a tu instructora.
-- **NO necesitas instalar nada raro.** Solo el editor (Codex, Antigravity o Claude Code) y un navegador con sesión iniciada en tu cuenta `@umce.cl` o Google personal.
+- **NO necesitas pagar nada.** La API de Gemini tiene un plan gratuito que te alcanza de sobra. Codex y Antigravity tienen plan gratuito. Si te piden tarjeta de crédito en algún momento → **detente** y revisa que estés en la pantalla correcta.
+- **NO necesitas instalar nada raro.** Solo el editor (Codex, Antigravity o Claude Code) y un navegador con sesión iniciada en una cuenta Google.
 
 ## Lo que SÍ necesitas tener listo
 
 - Computador con conexión a internet.
-- Cuenta Google activa (puede ser tu `@umce.cl` o personal — depende del módulo, te lo aclaramos cuando llegue el momento).
+- Cuenta Google activa.
 - Una idea aproximada de **qué tarea repetitiva** quieres automatizar. Si no se te ocurre nada, en `mi-perfil.md` hay sugerencias.
-- 4 a 6 horas de tu tiempo, repartidas a lo largo de las 2 semanas que dura el módulo asincrónico.
+- Algunas horas de tu tiempo, repartidas según el plazo que te hayas dado (o que tu formación te exija, si estás siguiendo un curso que enlaza este kit).
 
 ## Si te trabas
 
@@ -68,7 +66,7 @@ Si dudas cuál te conviene, en `docs/cuando-usar-que.md` está la regla de oro. 
 
 **Segunda línea**: revisa `docs/cuando-usar-que.md` y `docs/glosario-9-ladrillos.md`. Casi siempre la duda está ahí.
 
-**Tercera línea**: si nada funciona, escríbele a tu instructora del curso o al equipo UDFV (`udfv@umce.cl`). Pega el mensaje exacto que la IA te dio, y dile en qué paso del flujo estabas.
+**Tercera línea**: si nada funciona, busca soporte humano en el espacio formativo correspondiente o escribe al equipo que te haya entregado este kit.
 
 ## Una nota sobre confidencialidad
 
@@ -76,11 +74,12 @@ Algunas tareas docentes incluyen información sensible (nombres y notas de estud
 
 ## Cuando termines
 
-Cuando tu bot esté listo y la carpeta `entregable/` completa:
+Cuando tu bot esté listo y la carpeta `mi-resultado/` completa, ya tienes:
 
-1. Comprime la carpeta `entregable/` en un ZIP.
-2. Súbelo al aula virtual del Curso 2.4 (link en tu correo institucional).
-3. Marca tu participación como completada.
+- Un asistente funcional que resuelve una tarea concreta de tu trabajo.
+- Un system prompt documentado que puedes reusar, compartir o iterar.
+- Un par de pruebas que demuestran que el bot funciona.
+- Una reflexión sobre lo que aprendiste construyéndolo.
 
 Eso es todo. ¡Buen viaje!
 

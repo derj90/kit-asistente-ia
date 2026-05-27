@@ -2,7 +2,7 @@
 
 Aquí guardas las **pruebas que le hagas a tu bot**: capturas de pantalla, transcripciones, registros de cómo respondió frente a casos típicos y casos límite.
 
-Esta carpeta es parte importante de tu entregable: la rúbrica del curso evalúa explícitamente la **calidad de las conversaciones de prueba** (criterio 3, 25% del puntaje).
+Estas pruebas son la evidencia concreta de que tu bot funciona. Sirven tanto para iterar tu system prompt como para demostrar el resultado a otras personas (o entregarlo si tu formación lo exige).
 
 ## Qué tipo de archivos van aquí
 
@@ -12,7 +12,7 @@ Esta carpeta es parte importante de tu entregable: la rúbrica del curso evalúa
 
 ## Qué pruebas debes hacer (mínimo)
 
-La rúbrica pide **al menos 2 conversaciones de prueba**, una de cada tipo:
+Lo razonable es tener **al menos 2 conversaciones de prueba**, una de cada tipo:
 
 ### 1. Caso típico — el bot resuelve bien lo que se espera
 
@@ -67,10 +67,10 @@ Ya hay un archivo de ejemplo (`ejemplo-prueba-bot-redaccion.md`) para que veas e
 
 > Si quieres anonimizar partes de una captura, usa Vista Previa (Mac) o Paint (Windows) para tapar nombres, correos, RUTs. Nunca subas capturas con datos personales sensibles.
 
-## Para el entregable final
+## Para tu resultado final
 
 Cuando estés cerrando tu producto:
 
 1. Selecciona tus 2 (o 3) mejores conversaciones de prueba.
-2. Cópialas a `entregable/capturas/` (las imágenes) y referéncialas en tu reflexión.
+2. Cópialas a `mi-resultado/capturas/` (las imágenes) y referéncialas en tu reflexión.
 3. En la reflexión, comenta qué aprendiste de cada prueba.

@@ -1,6 +1,6 @@
 # Ejemplo — Asistente de redacción institucional UMCE
 
-> Bot tipo **Módulo A** (system prompt en un Gem de gemini.google.com). Adaptable a cualquier rol que redacte comunicados, oficios, correos institucionales o avisos a estudiantes.
+> Bot tipo **Nivel 1** (system prompt en un Gem de gemini.google.com). Adaptable a cualquier rol que redacte comunicados, oficios, correos institucionales o avisos a estudiantes.
 
 ## Caso de uso
 

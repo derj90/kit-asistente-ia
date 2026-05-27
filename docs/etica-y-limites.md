@@ -112,7 +112,7 @@ UMCE es una universidad formadora de profesores. Las pedagogías están en un mo
 
 Eso es parte del valor de este curso. No solo aprender a configurar Gems; aprender a tomar decisiones éticas sobre qué se delega a la IA y qué no, y poder explicar por qué.
 
-Tu reflexión final del curso (`entregable/reflexion.md`) es exactamente el lugar para articular esas decisiones. La rúbrica las valora explícitamente.
+Tu reflexión final (`mi-resultado/reflexion.md`) es exactamente el lugar para articular esas decisiones.
 
 ---
 

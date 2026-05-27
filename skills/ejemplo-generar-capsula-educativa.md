@@ -1,6 +1,6 @@
 # Skill — `generar-capsula-educativa`
 
-> Skill tipo **Módulo C.1**. Toma un concepto, un público objetivo y un tiempo, y produce el guion de una cápsula educativa breve estructurada según buenas prácticas de microlearning UDFV.
+> Skill tipo **Nivel 3** (bot con skill propia). Toma un concepto, un público objetivo y un tiempo, y produce el guion de una cápsula educativa breve estructurada según buenas prácticas de microlearning UDFV.
 
 ## Versión
 
@@ -131,8 +131,8 @@ derivarla en vez de improvisar.
 
 ENCUADRE (30 s)
 Esta semana, antes de pedirle algo a tu asistente IA, dedica diez minutos a escribirle quién es y
-qué hace. Te va a ahorrar horas. Y en el Curso 2.4 vamos a aprender a hacer system prompts
-sólidos, con los cuatro componentes que importan.
+qué hace. Te va a ahorrar horas. La clave está en escribir un system prompt sólido con los
+cuatro componentes que importan: rol, estilo, criterios y restricciones.
 [Visual: cierre con logo UDFV]
 
 — Fin del guion —

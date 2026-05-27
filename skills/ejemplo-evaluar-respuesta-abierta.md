@@ -1,6 +1,6 @@
 # Skill — `evaluar-respuesta-abierta`
 
-> Skill tipo **Módulo C.1**. Toma una pregunta abierta de evaluación, una rúbrica con criterios, y la respuesta de un estudiante; produce una retroalimentación formativa con puntaje sugerido, fortalezas, debilidades y propuesta concreta de mejora.
+> Skill tipo **Nivel 3** (bot con skill propia). Toma una pregunta abierta de evaluación, una rúbrica con criterios, y la respuesta de un estudiante; produce una retroalimentación formativa con puntaje sugerido, fortalezas, debilidades y propuesta concreta de mejora.
 
 ## Versión
 

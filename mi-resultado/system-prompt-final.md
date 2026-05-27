@@ -1,13 +1,13 @@
 # System prompt final — [Nombre de tu bot]
 
-> Este es el archivo donde pegas el **system prompt definitivo** que entregas al curso. Es lo que se va a evaluar en el criterio C2 (solidez técnica) de la rúbrica.
+> Este es el archivo donde queda el **system prompt definitivo** de tu bot. Es la pieza central de lo que construiste con el kit.
 
 ---
 
 ## Datos del bot
 
 - **Nombre del bot**:
-- **Módulo del curso (A / B / C)**:
+- **Nivel trabajado (1 / 2 / 3-4)**:
 - **Herramienta donde corre (Gem / Antigravity / Codex / Claude Code / NotebookLM)**:
 - **Modelo IA usado**:
 - **Temperatura usada**:
@@ -15,9 +15,9 @@
 
 ---
 
-## Caso de uso institucional
+## Caso de uso
 
-[En 2-3 frases: cuál es la tarea repetitiva de tu rol UMCE que este bot resuelve, y por qué te sirve a ti específicamente. Esto conecta con el criterio C1 — pertinencia del caso.]
+[En 2-3 frases: cuál es la tarea repetitiva que este bot resuelve, y por qué te sirve a ti específicamente.]
 
 ---
 
@@ -45,9 +45,9 @@ RESTRICCIONES — qué nunca debes hacer
 
 ## Configuración técnica (si aplica)
 
-- **Scopes OAuth activos** (solo Módulo B): [lista]
-- **Skills definidas** (solo Módulo C.1): [lista de archivos en `skills/`]
-- **Documentos cargados como memoria** (solo Módulo C.2): [lista de archivos en `memoria/`]
+- **Scopes OAuth activos** (solo Nivel 2): [lista]
+- **Skills definidas** (solo Nivel 3): [lista de archivos en `skills/`]
+- **Documentos cargados como memoria** (solo Nivel 4): [lista de archivos en `memoria/`]
 
 ---
 

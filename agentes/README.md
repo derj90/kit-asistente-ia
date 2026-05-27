@@ -5,8 +5,8 @@ Aquí van los **system prompts** de los bots que construyas. Un system prompt es
 ## Qué contiene esta carpeta
 
 - `plantilla-agente.md` — Estructura base con los 4 componentes (rol, estilo, criterios, restricciones) que tu asistente IA usará para ayudarte a redactar.
-- `ejemplo-asistente-redaccion.md` — Ejemplo completo de un bot para redacción institucional UMCE (Módulo A).
-- `ejemplo-orientador-estudiantes.md` — Ejemplo completo de un bot orientador para estudiantes ingresantes (Módulo A).
+- `ejemplo-asistente-redaccion.md` — Ejemplo completo de un bot para redacción institucional (Nivel 1).
+- `ejemplo-orientador-estudiantes.md` — Ejemplo completo de un bot orientador para estudiantes ingresantes (Nivel 1).
 - `tu-bot.md` — Lo creas tú (o tu asistente IA por ti) cuando empieces a trabajar.
 
 ## Cómo se usan
@@ -15,7 +15,7 @@ Aquí van los **system prompts** de los bots que construyas. Un system prompt es
 2. Revisará los ejemplos para inspirarse.
 3. Creará un archivo nuevo con tu bot (ej. `agentes/asistente-coordinacion.md`).
 4. Iterará contigo hasta que el system prompt esté maduro (mínimo 300 palabras, con los 4 componentes claros).
-5. Te guiará para pegarlo en el campo "Instructions" de un Gem en gemini.google.com (Módulo A) o en la configuración del agente en Antigravity/Codex (Módulos B y C).
+5. Te guiará para pegarlo en el campo "Instructions" de un Gem en gemini.google.com (Nivel 1) o en la configuración del agente en Antigravity/Codex (Niveles 2 y 3-4).
 
 ## Por qué importan los 4 componentes
 

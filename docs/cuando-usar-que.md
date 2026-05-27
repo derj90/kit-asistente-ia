@@ -14,7 +14,7 @@
 | Bot que responde citando muchos documentos propios | **NotebookLM** (notebooklm.google.com) |
 | Bot con pocos documentos propios estables (calendario, reglamento) | **Gem** con campo Knowledge |
 | Quiero todo en mi computador, sin depender de UI web | **Claude Code** (Terminal) |
-| Quiero automatizar workflows que se ejecutan solos en background | **n8n** (n8n.udfv.cloud — solo material de referencia, no necesario para el entregable del curso) |
+| Quiero automatizar workflows que se ejecutan solos en background | **n8n** (material de referencia opcional, no necesario para construir tu bot con este kit) |
 
 ---
 
@@ -53,7 +53,7 @@
 - Requieren API key Gemini y, para Workspace, OAuth Client en Google Cloud Console.
 - Si tu conexión a internet es inestable, frustra.
 
-**Cuesta**: plan gratuito generoso. Hay planes pagos para uso intensivo, pero el gratuito alcanza para todo el curso.
+**Cuesta**: plan gratuito generoso. Hay planes pagos para uso intensivo, pero el gratuito alcanza de sobra para construir tu primer bot.
 
 ---
 
@@ -117,14 +117,14 @@
 
 ## Una recomendación honesta del equipo UDFV
 
-Para el **entregable del Curso 2.4**, la mayoría de los participantes están mejor partiendo con un **Gem** en gemini.google.com. La razón: cero configuración técnica, resultado visible en 30 minutos, ruta clara hacia el entregable.
+Para tu primer bot, la mayoría de las personas están mejor partiendo con un **Gem** en gemini.google.com. La razón: cero configuración técnica, resultado visible en 30 minutos, ruta clara hasta llegar a un bot funcional.
 
-Si tu caso necesita Workspace o RAG, claro: ve a Antigravity / Codex / NotebookLM. Pero **no te compliques sin necesidad**. Un Gem bien hecho gana más puntos en la rúbrica que un orquestador a medio terminar.
+Si tu caso necesita Workspace o RAG, claro: ve a Antigravity / Codex / NotebookLM. Pero **no te compliques sin necesidad**. Un Gem bien hecho gana más que un orquestador a medio terminar.
 
 ---
 
 ## Una nota sobre n8n
 
-n8n es la herramienta que se demostró en la sesión sincrónica. Sirve para construir **workflows automatizados** (procesos que se ejecutan solos en horarios definidos), no tanto para bots conversacionales.
+n8n sirve para construir **workflows automatizados** (procesos que se ejecutan solos en horarios definidos), no tanto para bots conversacionales.
 
-Para el entregable del curso, **n8n no es necesario**. Quedaron las plantillas N1 a N5 en la instancia UDFV (n8n.udfv.cloud) como material de referencia para quienes quieran explorar más adelante. Pero no te exiges esa ruta para aprobar.
+Para construir tu primer asistente con este kit, **n8n no es necesario**. Si más adelante quieres explorar workflows automatizados, es una buena segunda etapa.
