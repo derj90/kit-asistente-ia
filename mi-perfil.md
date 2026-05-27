@@ -63,8 +63,8 @@
 
 ## 5. Restricciones importantes
 
-**Datos sensibles que NUNCA debo poner en este kit**:
-[Lista lo que sea sensible en tu trabajo — nombres y RUTs de estudiantes, evaluaciones, datos médicos, etc. Esto le sirve a tu asistente IA para no incluirlos por accidente en ejemplos]
+**Datos que prefieres que tu IA revise contigo antes de incluir en ejemplos o publicar**:
+[Lista lo que sea sensible en tu trabajo — nombres y RUTs de estudiantes, evaluaciones, datos médicos, etc. Tu asistente IA usará esta lista para avisarte cuando detecte algo así y preguntarte si lo dejas o lo anonimizan juntos. Tú decides; la IA solo te avisa.]
 
 **Mi plazo (si lo tengo)**:
 [Fecha objetivo en que quiero tener mi bot listo. Si no tienes plazo, déjalo abierto.]

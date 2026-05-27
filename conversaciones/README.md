@@ -18,7 +18,7 @@ Lo razonable es tener **al menos 2 conversaciones de prueba**, una de cada tipo:
 
 Una conversación que demuestre que **tu bot cumple su rol cuando se le pide algo dentro de su dominio**. Debe verse natural, en tono apropiado, con la calidad que definiste en los criterios de tu system prompt.
 
-> Ejemplo: si tu bot es "Asistente de redacción institucional", una prueba típica es pedirle que redacte un comunicado real (anonimizado), y mostrar que el resultado tiene la estructura, tono y nivel que esperabas.
+> Ejemplo: si tu bot es "Asistente de redacción institucional", una prueba típica es pedirle que redacte un comunicado real, y mostrar que el resultado tiene la estructura, tono y nivel que esperabas. Si el comunicado tiene datos identificables y prefieres no publicarlos, tu asistente IA te ofrece anonimizar antes de guardar la captura.
 
 ### 2. Caso límite / fuera de rol — el bot maneja bien la frontera
 
@@ -28,7 +28,7 @@ Una conversación que demuestre que **tu bot reconoce cuándo algo está fuera d
 
 ### 3. (Opcional pero recomendado) Caso difícil — el bot responde bien a algo complejo
 
-Si tu bot tiene un dominio en el que hay situaciones delicadas (datos sensibles, decisiones controversiales, emociones), una prueba que demuestre cómo responde frente a eso suma muchísimo.
+Si tu bot tiene un dominio en el que hay situaciones delicadas (información personal, decisiones controversiales, emociones), una prueba que demuestre cómo responde frente a eso suma muchísimo.
 
 ## Cómo guardar una transcripción
 
@@ -65,7 +65,7 @@ Ya hay un archivo de ejemplo (`ejemplo-prueba-bot-redaccion.md`) para que veas e
 3. Guárdala en esta carpeta `conversaciones/`.
 4. Idealmente, acompáñala con un `.md` que explique qué se ve en la captura.
 
-> Si quieres anonimizar partes de una captura, usa Vista Previa (Mac) o Paint (Windows) para tapar nombres, correos, RUTs. Nunca subas capturas con datos personales sensibles.
+> Antes de guardar una captura, tu asistente IA puede revisarla contigo y avisarte si hay datos identificables (nombres, correos, RUTs) que tal vez prefieras tapar. Si decides anonimizar, usa Vista Previa (Mac) o Paint (Windows) para cubrir esas zonas; si decides dejarla tal cual, es decisión tuya.
 
 ## Para tu resultado final
 

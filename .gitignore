@@ -1,53 +1,28 @@
-# Credenciales y secretos — NUNCA committear
+# Credenciales y secretos — son llaves de acceso a tus servicios externos (Google,
+# OpenAI, etc.). No son decisión del participante porque son secretos del proveedor.
 credenciales.env
 .env
 *.env.local
 *.env.production
-
-# OAuth tokens y archivos descargados de Google Cloud Console
 client_secret_*.json
 token.json
 *.pickle
 
-# Archivos en memoria/ que pueden tener datos sensibles
-memoria/*.pdf
-memoria/*.docx
-memoria/*.xlsx
-memoria/*.pptx
-# (mantén explicaciones .md en memoria/, que sí son commiteables)
-!memoria/README.md
-!memoria/EJEMPLO-LEER.md
-
-# Capturas y conversaciones que pueden tener datos personales sin anonimizar
-conversaciones/*.png
-conversaciones/*.jpg
-conversaciones/*.jpeg
-entregable/capturas/*.png
-entregable/capturas/*.jpg
-entregable/capturas/*.jpeg
-# (mantén ejemplos .md y .gitkeep)
-!conversaciones/ejemplo-prueba-bot-redaccion.md
-!entregable/capturas/.gitkeep
-
-# Macros y archivos del sistema operativo
+# Sistema operativo y editores
 .DS_Store
 ._*
 Thumbs.db
 desktop.ini
-
-# Editores e IDEs
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# Logs locales
+# Logs y cache
 *.log
 debug.log
 npm-debug.log*
-
-# Cache de herramientas
 .cache/
 __pycache__/
 *.pyc
@@ -55,6 +30,7 @@ node_modules/
 .next/
 .turbo/
 
-# Archivos temporales del propio participante (mientras construye)
-borrador-*.md
-TODO-personal.md
+# El resto — documentos en memoria/, capturas en conversaciones/ y
+# mi-resultado/capturas/, borradores, etc. — es DECISIÓN TUYA si lo publicas o no.
+# Tu asistente IA te avisará si detecta algo que conviene revisar antes de publicar.
+# Si prefieres ignorar algún archivo o carpeta en particular, agrégalo abajo.

@@ -46,9 +46,9 @@
 | Bot edita Google Docs | `auth/documents` |
 | Bot edita Google Sheets | `auth/spreadsheets` |
 
-**Política UDFV obligatoria**:
+**Reglas operativas innegociables**:
 - [ ] Si tu bot va a tocar Gmail, no lo configures con `gmail.send` sin política de confirmación humana.
-- [ ] Tu bot NUNCA debe enviar correos automáticamente sin revisión.
+- [ ] Tu bot no envía correos automáticamente sin revisión humana. Esto es regla operativa, no opcional.
 - [ ] Antes de borrar/modificar archivos en Drive, el bot debe pedir confirmación explícita.
 
 ---
@@ -75,33 +75,43 @@
 
 - [ ] Cuenta Google activa
 - [ ] 2-3 PDFs o documentos relevantes para subir al campo "Knowledge" del Gem
-- [ ] Documentos **anonimizados** si contenían datos sensibles
+- [ ] Tu asistente IA te avisa antes de subir si detecta datos que conviene revisar; tú decides si anonimizas o subes tal cual
 
 **Si lo haces en NotebookLM (recomendado para muchos documentos)**:
 
 - [ ] Cuenta Google activa
 - [ ] Acceso a https://notebooklm.google.com
-- [ ] Documentos a subir (anonimizados)
+- [ ] Documentos listos para subir (tu IA revisa contigo si hay algo identificable que prefieras anonimizar)
 - [ ] (Opcional) Compartir el cuaderno con tu equipo
 
 **Si lo haces en Codex / Antigravity / Claude Code con la carpeta `memoria/`**:
 
 - [ ] API key de Gemini
-- [ ] Documentos en `memoria/` (anonimizados)
+- [ ] Documentos en `memoria/` (tu IA te avisa si conviene anonimizar algo antes de usarlo como fuente)
 - [ ] `credenciales.env` con `GEMINI_API_KEY`
 
 ---
 
-## Lista negra — Nunca jamás
+## Lo innegociable — credenciales y envío automático
 
-Sin importar el nivel, estas cosas son línea roja:
+Casi todo en este kit es decisión tuya: qué documentos subes, qué nombres dejas en las capturas, qué datos usas en ejemplos. Tu asistente IA te avisa cuando detecte algo que conviene revisar, pero la decisión es tuya.
 
-- [ ] **NO** subas tu archivo `credenciales.env` a GitHub ni a ningún repo público.
-- [ ] **NO** publiques capturas de pantalla que muestren tu API key o Client Secret.
-- [ ] **NO** compartas tu API key por correo, WhatsApp ni Slack.
-- [ ] **NO** uses datos personales sensibles de personas reales (RUTs, notas, situaciones específicas) en ejemplos ni en `memoria/`.
-- [ ] **NO** configures el bot para enviar correos automáticamente sin confirmación humana.
-- [ ] **NO** le des al bot scopes que no necesita ("por si acaso"). Cada scope adicional es riesgo gratis.
+Hay dos excepciones que sí son reglas duras, no decisión del participante:
+
+**1. Credenciales reales (API keys, OAuth tokens, contraseñas) NO se suben al repo nunca.**
+Esto no es paternalismo — son secretos del proveedor (Google, OpenAI, etc.) y exponerlos compromete la seguridad de todas las cuentas asociadas. Si tu IA detecta una credencial real en un archivo, la saca antes de commitear.
+
+- [ ] No subas tu archivo `credenciales.env` a GitHub ni a ningún repo público.
+- [ ] No publiques capturas de pantalla que muestren tu API key o Client Secret.
+- [ ] No compartas tu API key por correo, WhatsApp ni Slack.
+
+**2. El bot NO envía correos automáticamente sin revisión humana.**
+Esto es regla operativa, no de privacidad: cualquier acción del bot sobre Gmail queda como borrador hasta que tú confirmes.
+
+- [ ] No configures el bot con `gmail.send` sin política explícita de confirmación.
+- [ ] No le des al bot scopes que no necesita ("por si acaso"). Cada scope adicional es riesgo gratis.
+
+**Lo demás** (qué documentos pones en `memoria/`, qué nombres aparecen en tus ejemplos, qué muestran tus capturas) lo decides tú con la ayuda de tu asistente IA, que te avisa y te ofrece anonimizar si quieres.
 
 ---
 

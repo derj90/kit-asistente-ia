@@ -20,12 +20,12 @@ mi-resultado/
 ### Tu system prompt final (`system-prompt-final.md`)
 - [ ] Tiene los 4 componentes claramente etiquetados (ROL / ESTILO / CRITERIOS / RESTRICCIONES).
 - [ ] Suma al menos 300 palabras.
-- [ ] Restricciones incluyen al menos 3 reglas duras (sobre datos sensibles, derivación a humanos, no inventar).
-- [ ] No tiene datos sensibles ni nombres reales de personas concretas.
+- [ ] Restricciones incluyen al menos 3 reglas duras (cómo se trata la información sensible, cuándo deriva a humanos, no inventar).
+- [ ] Antes de publicar, tu IA revisa contigo si hay datos que te conviene anonimizar.
 
 ### Tus pruebas (`capturas/`)
 - [ ] Al menos 2 conversaciones: una típica y una de borde (fuera de rol).
-- [ ] Datos personales anonimizados en todas las capturas.
+- [ ] Tu IA te avisó antes de guardar las capturas si detectó datos identificables; tú decidiste qué dejar.
 - [ ] Cada captura está acompañada por una breve nota tuya sobre qué muestra y qué aprendiste.
 
 ### Tu reflexión (`reflexion.md`)

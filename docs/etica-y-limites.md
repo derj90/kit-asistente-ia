@@ -20,7 +20,7 @@ Tareas que **no involucran juicio sobre personas, no usan datos sensibles, y son
 
 **Ejemplos**:
 - Redactar la versión inicial de comunicados administrativos rutinarios.
-- Resumir transcripciones de reuniones internas (anonimizadas).
+- Resumir transcripciones de reuniones internas.
 - Generar listas de tareas a partir de actas de reunión.
 - Convertir un concepto académico en un guion de cápsula educativa.
 - Buscar en tu propia documentación institucional dónde está cierto procedimiento.
@@ -62,15 +62,18 @@ Si tu bot va a interactuar con estudiantes o colegas, ellos tienen derecho a sab
 
 > Buena práctica: que tu bot se presente al inicio de cada conversación: "Hola, soy un asistente de IA configurado por [nombre de la docente] para ayudar con consultas sobre [dominio]. Si tu consulta excede mi rol, te derivaré a quien corresponda."
 
-### 2. Los datos personales sensibles son línea roja
+### 2. Los datos personales sensibles son un punto de pausa
 
-**Nunca** alimentes a tu bot con:
+Tu asistente IA va a detenerse y consultarte antes de avanzar cuando detecte material que conviene revisar:
+
 - Nombres completos + RUTs de estudiantes.
 - Calificaciones o evaluaciones de estudiantes identificables.
 - Datos de salud, situaciones disciplinarias, antecedentes familiares.
 - Conversaciones privadas con personas que no han autorizado el uso de IA.
 
-**Si necesitas usar estos datos**, anonimízalos primero. Pseudónimos consistentes, RUTs genéricos, correos placeholder. Documenta en tu reflexión qué política de anonimización aplicaste.
+La pausa no es prohibición: es una pregunta. Algo como "detecté esto en el documento que vas a usar, ¿lo dejas tal cual o lo anonimizamos antes?". Tú decides según tu contexto, tu rol y tu lectura ética de la situación. Si optas por anonimizar, tu IA aplica la receta estándar (pseudónimos consistentes, RUTs genéricos, correos placeholder). Si optas por usarlo tal cual porque tienes la autorización y el contexto lo justifica, también está bien — registra en tu reflexión qué decidiste y por qué.
+
+Lo que tu asistente IA no hará: tomar la decisión por ti ni regañarte por la decisión que tomes.
 
 ### 3. La responsabilidad sigue siendo humana
 
@@ -88,8 +91,9 @@ Estas son las restricciones que tu system prompt debe contener (puedes copiarlas
 - Nunca inventes información, datos, citas, normativa, oficios ni decisiones institucionales.
   Si no sabes algo, dilo explícitamente y sugiere a quién consultar.
 
-- Nunca proceses ni respondas con datos personales sensibles de estudiantes (nombres completos,
-  RUTs, evaluaciones, datos de salud) salvo que estén anonimizados.
+- Si detectas datos personales identificables (nombres completos + RUTs, evaluaciones, datos
+  de salud) en lo que la usuaria te pide procesar, señálalo y pregúntale si quiere dejarlos o
+  anonimizarlos antes de seguir. La decisión es de ella; tu rol es advertir y ofrecer ayuda.
 
 - Nunca emitas juicios de valor sobre personas, profesores, autoridades ni unidades de la UMCE.
 
@@ -101,7 +105,8 @@ Estas son las restricciones que tu system prompt debe contener (puedes copiarlas
   cordialmente y explica el riesgo institucional.
 
 - Nunca envíes comunicaciones automáticamente. Si tu rol incluye redactar correos, déjalos como
-  borrador para revisión humana — nunca envíes sin confirmación explícita.
+  borrador para revisión humana — nunca envíes sin confirmación explícita. Esta regla no es
+  negociable: es operativa, no de privacidad.
 ```
 
 ---
@@ -123,6 +128,6 @@ Pregunta:
 1. **¿Quién es afectado si la IA se equivoca?** Si es solo tú, riesgo bajo. Si es un estudiante, riesgo alto.
 2. **¿La persona del otro lado sabe que es IA?** Si no, tiene derecho a saberlo.
 3. **¿Estoy delegando una decisión que requiere juicio humano?** Si sí, retrocede.
-4. **¿Estoy usando datos que no debería estar usando?** Si sí, anonimiza o cambia de fuente.
+4. **¿Los datos que estoy usando los puedo usar con esta finalidad?** Si dudas, pídele a tu asistente IA que te ayude a revisar y decide tú según tu contexto y rol.
 
 Y si después de esas preguntas sigues dudando: **no automatices esa parte**. Hay tareas que mantienen su valor precisamente porque las hace una persona pensando.

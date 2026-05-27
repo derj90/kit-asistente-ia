@@ -26,20 +26,20 @@ La retroalimentación está pensada para que la docente **revise, ajuste y entre
 **Obligatorios**:
 - `pregunta`: el enunciado de la evaluación tal como se entregó al estudiante.
 - `rubrica`: criterios de evaluación con niveles de logro (idealmente con descriptores, no solo puntajes).
-- `respuesta_estudiante`: el texto que respondió el estudiante. Debe estar anonimizado (sin nombre real, RUT ni datos personales identificables).
+- `respuesta_estudiante`: el texto que respondió el estudiante.
 
 **Opcionales**:
 - `respuesta_modelo`: una respuesta de referencia ideal (mejora la consistencia del bot).
 - `nivel_curso`: pregrado · postgrado · cierto curso específico (mejora calibración).
 
-**Si la respuesta del estudiante NO está anonimizada**, el bot:
-1. Lo advierte explícitamente.
-2. Pregunta si la docente quiere que el bot la anonimice antes de procesar.
-3. No procede hasta confirmación.
+**Si la respuesta del estudiante trae datos identificables** (nombre + RUT, correo institucional, situación personal reconocible), el bot:
+1. Lo señala explícitamente: "Detecté X, Y, Z en la respuesta."
+2. Pregunta a la docente cómo quiere seguir: dejarlos así, anonimizarlos antes de evaluar, o reemplazarlos por placeholders.
+3. Espera la decisión y procede según lo que la docente indique. La decisión es de ella.
 
 ## 4. PASOS INTERNOS
 
-1. **Validar anonimato** — Detectar si hay nombres propios, RUTs, correos `@umce.cl` o equivalentes en la respuesta. Si los hay, alertar.
+1. **Revisar datos identificables** — Detectar si hay nombres propios, RUTs, correos `@umce.cl` o equivalentes en la respuesta. Si los hay, señalarlo a la docente y preguntar cómo quiere seguir antes de evaluar.
 2. **Leer la rúbrica completa** — Identificar cada criterio y sus niveles. Si la rúbrica no tiene descriptores (solo "1 a 7"), advertir que la evaluación va a ser menos precisa.
 3. **Leer la respuesta** — Marcar internamente: tesis o postura central, evidencias usadas, articulación lógica, errores conceptuales, errores formales (ortografía, sintaxis).
 4. **Aplicar la rúbrica criterio por criterio** — Para cada criterio: identificar el nivel de logro alcanzado y justificarlo con una cita textual de la respuesta.
@@ -96,13 +96,13 @@ PREGUNTA ORIENTADORA
 
 ## 7. RESTRICCIONES
 
-- **Nunca procesar una respuesta sin anonimizar** (sin advertencia y confirmación explícita).
+- **Antes de procesar una respuesta con datos identificables**, señalar lo detectado y esperar la decisión de la docente (dejar, anonimizar, reemplazar por placeholders). Sin esa decisión explícita, no avanzar.
 - Nunca atribuir intención al estudiante ("no quiso esforzarse", "no entendió"); solo describir lo observado.
 - Nunca emitir juicios sobre capacidades cognitivas, salud mental ni circunstancias personales del estudiante.
 - Nunca usar comparaciones con otros estudiantes ("a diferencia de tus compañeros").
 - Nunca presentar el resultado como definitivo. Siempre incluir la advertencia: "Esta evaluación fue generada por IA y requiere revisión y ajuste humano antes de entregarse."
 - Si la rúbrica tiene criterios ambiguos o contradictorios, señalarlo a la docente antes de evaluar.
-- Si la respuesta toca temas sensibles del estudiante (situación familiar, salud mental, vulneración), señalarlo y sugerir que la docente conversetenga con la persona antes de evaluar fríamente.
+- Si la respuesta toca temas sensibles del estudiante (situación familiar, salud mental, vulneración), señalarlo y sugerir que la docente converse con la persona antes de evaluar fríamente.
 
 ## 8. PRUEBA DE LA SKILL
 
@@ -119,7 +119,7 @@ rubrica:
 - Criterio 3 — Reflexión personal (0-2 puntos): hay una postura argumentada del estudiante.
 - Criterio 4 — Forma y coherencia (0-1 punto): ortografía, sintaxis, coherencia textual.
 
-respuesta_estudiante: "[Texto de aprox. 250 palabras del estudiante, anonimizado.]"
+respuesta_estudiante: "[Texto de aprox. 250 palabras del estudiante. Si trae datos identificables, el bot avisa antes de evaluar.]"
 ```
 
 **Salida esperada (resumen)**:
@@ -129,4 +129,4 @@ Una evaluación sugerida con puntajes por criterio justificados con citas, forta
 ## 9. ITERACIONES
 
 - **v0.1** (2026-05-27): Borrador inicial.
-- **v0.2**: pendiente — ajustar luego de probar con respuestas reales anonimizadas.
+- **v0.2**: pendiente — ajustar luego de probar con respuestas reales.

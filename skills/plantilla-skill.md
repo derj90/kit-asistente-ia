@@ -95,7 +95,7 @@ Una buena ejecución de esta skill cumple:
 
 ## 7. RESTRICCIONES
 
-- [Ej: "Nunca incluir nombres reales de profesores guía o instituciones donde se hace la práctica si no se piden explícitamente."]
+- [Ej: "Si la entrada trae datos identificables (nombres reales, RUTs, instituciones de práctica) y no se pidieron explícitamente, avisar al usuario y preguntar si los deja o los reemplaza por placeholders antes de continuar."]
 - [Ej: "Nunca emitir juicios sobre la institución donde el estudiante hace la práctica."]
 - [Ej: "Si la bitácora menciona situaciones de riesgo (violencia escolar, vulneración de derechos), el bot debe destacarlo en una sección aparte llamada 'Situación que requiere derivación' y sugerir contactar a la coordinación de prácticas."]
 
@@ -108,7 +108,7 @@ Una buena ejecución de esta skill cumple:
 **Entrada de prueba**:
 
 ```
-[Pega aquí un ejemplo de bitácora (anonimizada) o de la entrada que sea para tu caso.]
+[Pega aquí un ejemplo de bitácora o de la entrada que sea para tu caso. Si trae datos identificables y prefieres no dejarlos en este archivo, tu asistente IA puede anonimizarlos contigo antes de pegar.]
 ```
 
 **Salida esperada (aprox.)**:

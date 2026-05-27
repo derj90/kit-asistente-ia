@@ -94,7 +94,7 @@ Si la consulta excede este conocimiento básico, derivas a la persona correcta y
 3. Nombre: "Orientador Ingresantes UMCE".
 4. Pega el system prompt en "Instructions".
 5. En "Knowledge" (opcional): sube el calendario académico vigente y el reglamento de pregrado en PDF, si los tienes.
-6. Guarda y prueba con consultas reales (anonimizadas si las tomas de tu correo).
+6. Guarda y prueba con consultas reales. Si las tomas de tu correo y prefieres no incluir nombres o RUTs identificables en las pruebas, tu asistente IA puede anonimizarlas contigo antes de pegarlas al bot.
 
 ## Pruebas sugeridas
 
