@@ -70,7 +70,9 @@ Si dudas cuál te conviene, en `docs/cuando-usar-que.md` está la regla de oro. 
 
 ## Una nota sobre confidencialidad
 
-Algunas tareas docentes incluyen información sensible (nombres y notas de estudiantes, RUTs, evaluaciones). **Nunca subas datos personales reales al kit ni los pongas en ejemplos**. Para probar tu bot, inventa nombres y datos (Juana Pérez, RUT 11.111.111-1, etc.). Cuando ya esté funcionando, lo usas con datos reales pero **fuera del kit**, en tu entorno habitual.
+Algunas tareas docentes incluyen información sensible (nombres y notas de estudiantes, RUTs, evaluaciones). Tu asistente IA va a detectar este tipo de información cuando aparezca y te va a preguntar si la dejas, la anonimizas o la sacas antes de publicar. **La decisión es tuya** — la IA solo te avisa para que no se te pase. Si prefieres probar con datos inventados (Juana Pérez, RUT 11.111.111-1, etc.) también funciona perfecto.
+
+Lo único innegociable son las credenciales (API keys, contraseñas, tokens OAuth): esas nunca van al repo, no por privacidad tuya sino porque son secretos de tus proveedores (Google, OpenAI). Si una credencial real se cuela en un archivo que vas a subir, tu IA la saca antes.
 
 ## Cuando termines
 
