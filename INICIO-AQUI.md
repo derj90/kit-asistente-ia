@@ -6,11 +6,11 @@ Antes de cualquier cosa: **respira**. No tienes que entender todo de inmediato. 
 
 ## Lo que vas a hacer en los próximos 30 minutos
 
-1. Leer este archivo hasta el final (5 min).
-2. Completar `mi-perfil.md` (10 min). No te preocupes si tus respuestas no son perfectas; tu asistente IA te ayudará a refinarlas.
-3. Abrir esta carpeta en **Codex** (codex.com), **Claude Code** o **Antigravity** (antigravity.com).
-4. Escribirle al chat: **"Ayúdame a empezar"**.
-5. A partir de ahí, dejas que la IA conduzca. Ella ya sabe qué hacer porque va a leer el archivo `AGENTS.md`.
+1. Abre esta carpeta en **Codex** (codex.com), **Claude Code** o **Antigravity** (antigravity.com).
+2. En el chat, escríbele: **"Ayúdame a empezar"**.
+3. La IA te va a guiar para completar `mi-perfil.md` con preguntas, una a la vez (toma ~10 min).
+4. Una vez con el perfil listo, ella te propone el nivel de bot que te calza (1, 2, 3 o 4) y empiezan a construirlo.
+5. Sigues lo que la IA te indique. Si te trabas, le dices "no entiendo" y baja el nivel.
 
 ## ¿Qué herramienta uso? Codex vs Claude Code vs Antigravity
 
