@@ -1,0 +1,60 @@
+# Credenciales y secretos — NUNCA committear
+credenciales.env
+.env
+*.env.local
+*.env.production
+
+# OAuth tokens y archivos descargados de Google Cloud Console
+client_secret_*.json
+token.json
+*.pickle
+
+# Archivos en memoria/ que pueden tener datos sensibles
+memoria/*.pdf
+memoria/*.docx
+memoria/*.xlsx
+memoria/*.pptx
+# (mantén explicaciones .md en memoria/, que sí son commiteables)
+!memoria/README.md
+!memoria/EJEMPLO-LEER.md
+
+# Capturas y conversaciones que pueden tener datos personales sin anonimizar
+conversaciones/*.png
+conversaciones/*.jpg
+conversaciones/*.jpeg
+entregable/capturas/*.png
+entregable/capturas/*.jpg
+entregable/capturas/*.jpeg
+# (mantén ejemplos .md y .gitkeep)
+!conversaciones/ejemplo-prueba-bot-redaccion.md
+!entregable/capturas/.gitkeep
+
+# Macros y archivos del sistema operativo
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Editores e IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs locales
+*.log
+debug.log
+npm-debug.log*
+
+# Cache de herramientas
+.cache/
+__pycache__/
+*.pyc
+node_modules/
+.next/
+.turbo/
+
+# Archivos temporales del propio participante (mientras construye)
+borrador-*.md
+TODO-personal.md
